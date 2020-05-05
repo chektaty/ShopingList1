@@ -1,0 +1,64 @@
+<ion-app>
+    <ion-menu side="start" menuId="first" contentId="main">
+        <ion-header >
+          <ion-toolbar class="menuHeader" color="primary">
+            <ion-title slot="start" >Start Menu</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <ion-list>
+              <ion-menu-toggle>
+                  <ion-item button (click)="goTo('listeproject')">
+                   <ion-icon name="documents-sharp" slot="start"></ion-icon>
+                   <ion-label> listes partagées</ion-label>
+                </ion-item>
+               </ion-menu-toggle>
+
+            <ion-menu-toggle>
+              <ion-item button (click)="goTo('invitation')">
+                  <ion-icon name="share-social" slot="start"></ion-icon>
+                        <ion-label>Invitation </ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+           
+
+            <ion-menu-toggle>
+                <ion-item button (click)="goTo('premium')">
+                <ion-icon name="card" slot="start"></ion-icon>
+                  <ion-label> Abonnement Premium</ion-label>
+             </ion-item>
+            </ion-menu-toggle>
+ 
+        
+            <ion-menu-toggle>
+                <ion-item button >
+                  <ion-icon name="chatbubbles" slot="start"></ion-icon>
+                  <ion-label> Envoyer vos commentaires</ion-label>
+               </ion-item>
+            </ion-menu-toggle>
+
+            <ion-menu-toggle>
+                <ion-item button (click)="goTO('premium')">
+                       <ion-icon name="analytics" slot="start"></ion-icon>
+                       <ion-label> Amélioration</ion-label>
+               </ion-item>
+              </ion-menu-toggle>
+              <ion-menu-toggle>
+                  <ion-item button (click)="goTO('paramettre')">
+              
+                  <ion-icon name="settings" slot="start"></ion-icon>
+                  <ion-label> Paramètre</ion-label>
+               </ion-item>
+              </ion-menu-toggle>
+
+                <ion-item>
+                    <ion-icon name="power" slot="start"></ion-icon>
+                        <ion-label> Deconnexion</ion-label>
+                 </ion-item>
+ 
+             
+            </ion-list>
+        </ion-content>
+      </ion-menu>
+      <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

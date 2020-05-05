@@ -1,0 +1,18 @@
+.add-button {
+    --background: #383a3e;
+    position: absolute;
+    bottom: 5px;
+    width: 96%;
+    --color: #ffffff;
+    margin-left: 2%;
+}
+#cart-btn {
+    position: relative;
+    top: 10px;
+ }
+ 
+ #cart-badge {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+ }

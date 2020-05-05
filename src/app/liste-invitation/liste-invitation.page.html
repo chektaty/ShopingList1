@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Liste Invitation</ion-title>
+    <ion-buttons slot="start">
+        <ion-back-button defaultHref="/intro"></ion-back-button>
+    </ion-buttons>
+      
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+
+  <ion-list>
+    <ion-card *ngFor="let list of mylisteAmie">  
+        <ion-item shape="round"  lines="none">
+           <ion-label>
+            {{ list.email}}
+          </ion-label>
+          <ion-button color="danger" shape="round" slot="end" (click)="deleteInvitation(list)">
+            <ion-icon slot="icon-only" name="remove-circle-sharp" ></ion-icon>    
+        </ion-button>
+        
+        </ion-item>
+      </ion-card>
+</ion-list> 
+
+
+  
+</ion-content>
